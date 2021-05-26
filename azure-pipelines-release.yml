@@ -26,13 +26,13 @@ pool: Default
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: koistinen-django-automation-test-pipelines
+  - repository: koistinen-django-automation-test-linkedevents-pipelines
     type: git
     # Azure DevOps project/repository
-    name: koistinen-django-automation-test/koistinen-django-automation-test-pipelines
+    name: koistinen-django-automation-test-linkedevents/koistinen-django-automation-test-linkedevents-pipelines
 
 extends:
   # Filename in Azure DevOps Repository (note possible -ui or -api)
   # Django example: azure-pipelines-PROJECTNAME-api-release.yml
   # Drupal example: azure-pipelines-PROJECTNAME-release.yml
-  template: azure-pipelines-koistinen-django-automation-test-release.yml@koistinen-django-automation-test-pipelines
+  template: azure-pipelines-koistinen-django-automation-test-linkedevents-release.yml@koistinen-django-automation-test-linkedevents-pipelines
